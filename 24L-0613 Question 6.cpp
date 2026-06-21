@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*#include<iostream>
 using namespace std;
 int main()/*This code checks for each duplicate value as we go by and then display if any  error in next line and 
@@ -115,3 +116,28 @@ if there is no duplictae value it simply ontinues to the next row and takes outp
 		}
 	}
 }*/
+=======
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n = 501,sum=0;
+	while (n > 500 && n < 3000)
+	{
+		if (n % 3 == 0)
+		{
+			sum += n;
+		}
+		if (n % 5 == 0)
+		{
+			sum += n;
+        }
+		if ((n % 3 == 0) && (n % 5 == 0))
+		{
+			sum = sum - (2 * n);
+		}
+		n++;
+	}
+	cout << "Sum is " << sum;
+}
+>>>>>>> bb32fe2c3aaf374633a07d0948a2c51957adff7c
